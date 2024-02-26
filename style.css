@@ -73,6 +73,44 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
+.check{
+    position: relative;
+    width: 50px;
+    height: 16px;
+}
+
+.check::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background-color: #ff004f;
+    border-radius: 25px;
+}
+
+.check:checked::before{
+    background: #ff004f;
+}
+
+.check::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 1px solid #262626;
+    box-sizing: border-box;
+}
+
+.check.check:checked::after{
+    left: 25px;
+    border: 1px solid #262626;
+
+}
+
 .header-text{
     margin-top: 20%;
     font-size: 30px;
@@ -485,6 +523,48 @@ nav .fas{
 
     .copyright{
         font-size: 10px;
+    }
+
+    .check{
+        position: relative;
+        width: 50px;
+        height: 16px;
+    }
+    
+    .check::before{
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 25px;
+        background-color: #262626;
+        border-radius: 25px;
+    }
+    
+    .check:checked::before{
+        background: #262626;
+    }
+    
+    .check::after{
+        content: '';
+        position: absolute;
+        left: 0px;
+        width: 25px;
+        height: 25px;
+        background-color: #fff;
+        border-radius: 25px;
+        transition: 0.25s;
+        border: 1px solid #262626;
+        box-sizing: border-box;
+    }
+    
+    .check.check:checked::after{
+        left: 25px;
+        border: 1px solid #ff004f;
+    
+    }
+
+    .en{
+        margin-left: 25px;
     }
 
 }
