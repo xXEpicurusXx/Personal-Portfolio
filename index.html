@@ -1,212 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="main.js" defer></script>
-    <script
-      src="https://kit.fontawesome.com/3b50b1437b.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Cameron's Personal Portfolio</title>
-  </head>
-  <body>
-    <div id="header">
-      <div class="container">
-        <nav>
-          <div class="logo">
-            <i class="fa-solid fa-laptop-code"></i> Cameron.
-          </div>
-          <!-- <img src="images/logo.png" class="logo" alt="Logo image." /> -->
-          <ul id="sidemenu">
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Skills</a></li>
-            <li><a href="#portfolio">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          
-            <i class="fas fa-times" onclick="closemenu()"></i>
-          </ul>
-          <i class="fas fa-bars" onclick="openmenu()"></i>
-        </nav>
 
-        <div class="header-text">
-          <h1>
-            Hi, I'm <span>Cameron.</span> <br />I'm a Fullstack Web Developer
-          </h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js" defer></script>
+  <script src="https://kit.fontawesome.com/3b50b1437b.js" crossorigin="anonymous"></script>
+  <title>Cameron's Personal Portfolio</title>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <i class="fa-solid fa-laptop-code"></i> Cameron.
         </div>
+        <!-- <img src="images/logo.png" class="logo" alt="Logo image." /> -->
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Skills</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+
+      <div class="header-text">
+        <h1>
+          Hi, I'm <span>Cameron.</span> <br />I'm a Fullstack Web Developer
+        </h1>
       </div>
     </div>
-    <!-- -----------about----------- -->
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="images/Portfoio-image.png" alt="" />
-          </div>
-          <div class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
-            <p>
-              Hey there, I'm Cameron! I'm an American immigrant living in the
-              bustling city of Tokyo with my lovely wife and our two lovely
-              daughters. Before moving to Japan in 2019, I spent a decade in the
-              US military. As a self-taught programmer, I've got a solid grasp
-              when it comes to web develpment and computer programming
-              fundamentals. I'm currently a student, studying IT at University
-              through their online program, as I'm making a career change into
-              the tech industry. I have discovered that it's something I'm truly
-              passionate about! I'm great at working under pressure and have a
-              knack for picking up new skills quickly. I am always learning and
-              honing my skills to tackle any problems or tasks thrown my way.
-            </p>
-
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">
-                Skills
-              </p>
-              <p class="tab-links" onclick="opentab('experience')">
-                Experience
-              </p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
-            </div>
-            <!-- Skills -->
-            <div class="tab-contents active-tab" id="skills">
-              <ul>
-                <li>
-                  <span>Fullstack Web Development</span><br />
-                  As a full-stack web developer, I possess a wide range of
-                  skills that enable me to build and maintain both the front-end
-                  and back-end of web applications. I'm proficient in various
-                  programming languages, frameworks, and technologies, allowing
-                  me to create functional and visually appealing websites and
-                  applications. My expertise in front-end and back-end
-                  development, database management, API integration, and
-                  problem-solving make me a valuable asset to any project or
-                  team.
-                </li>
-              </ul>
-            </div>
-            <!-- Experience -->
-            <div class="tab-contents" id="experience">
-              <ul>
-                <li>
-                  <span>Current</span><br />Joined an esteemed internship with
-                  Sustainability, where I have the opportunity to address and
-                  resolve intricate back-end challenges within the realm of web
-                  development.
-                </li>
-              </ul>
-            </div>
-            <!-- Education -->
-            <div class="tab-contents" id="education">
-              <ul>
-                <li>
-                  <span>Old Dominion University</span><br />Major - Information
-                  Technology
-                </li>
-                <li>
-                  <span>Self-Taught</span><br />
-                  While completing my Degree, I have spent the past few years
-                  teaching myself computer programming and Fullstack Web
-                  Develpment with the help of the ever growing list of Udemy Courses and Online
-                  tutorials I used to teach myself most anything I needed to
-                  know to start a new career as a software engineer / Fullstack
-                  Web Developer.
-                </li>
-              </ul>
-            </div>
-          </div>
+  </div>
+  <!-- -----------about----------- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/Portfoio-image.png" alt="" />
         </div>
-      </div>
-    </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            Hey there, I'm Cameron! I'm an American immigrant living in the
+            bustling city of Tokyo with my lovely wife and our two lovely
+            daughters. Before moving to Japan in 2019, I spent a decade in the
+            US military. As a self-taught programmer, I've got a solid grasp
+            when it comes to web develpment and computer programming
+            fundamentals. I'm currently a student, studying IT at University
+            through their online program, as I'm making a career change into
+            the tech industry. I have discovered that it's something I'm truly
+            passionate about! I'm great at working under pressure and have a
+            knack for picking up new skills quickly. I am always learning and
+            honing my skills to tackle any problems or tasks thrown my way.
+          </p>
 
-    <!------------------services---------------->
-    <div id="services">
-      <div class="container">
-        <h1 class="sub-title">Skills</h1>
-        <div class="services-list">
-          <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>UI/UX Design</h2>
-            <p>
-              I'm the maestro of digital harmony, orchestrating seamless user
-              experiences that are as intuitive as they are enchanting. With a
-              keen eye for aesthetics and a deep understanding of human
-              behavior, I craft interfaces that are as easy on the eyes as they
-              are on the mind. The result? A digital symphony that leaves users
-              humming with delight.
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">
+              Skills
             </p>
-            <!-- <a href="#">Learn More</a> -->
+            <p class="tab-links" onclick="opentab('experience')">
+              Experience
+            </p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
           </div>
-
-          <div>
-            <i class="fa-solid fa-crop"></i>
-            <h2>Web Development</h2>
-            <p>
-              I'm a jack-of-all-trades in the digital realm, seamlessly blending
-              front-end finesse with back-end brilliance. A master of HTML, CSS,
-              and JavaScript, I create visually stunning websites that are as
-              functional as they are fabulous. Plus, with my server-side
-              sorcery, I ensure that each user's experience is smooth and
-              seamless.
-            </p>
-            <!-- <a href="#">Learn More</a> -->
+          <!-- Skills -->
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li>
+                <span>Fullstack Web Development</span><br />
+                As a full-stack web developer, I possess a wide range of
+                skills that enable me to build and maintain both the front-end
+                and back-end of web applications. I'm proficient in various
+                programming languages, frameworks, and technologies, allowing
+                me to create functional and visually appealing websites and
+                applications. My expertise in front-end and back-end
+                development, database management, API integration, and
+                problem-solving make me a valuable asset to any project or
+                team.
+              </li>
+            </ul>
           </div>
-
-          <div>
-            <i class="fa-solid fa-database"></i>
-            <h2>Database Management</h2>
-            <p>
-              I'm the digital librarian, meticulously cataloging and curating
-              vast troves of data with a keen eye for organization. With a knack
-              for SQL and a passion for efficiency, I ensure that information is
-              stored, retrieved, and updated with the precision of a Swiss
-              watch. In the world of data, I'm the master of order and
-              efficiency.
-            </p>
-            <!-- <a href="#">Learn More</a> -->
+          <!-- Experience -->
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li>
+                <span>Current</span><br />Joined an esteemed internship with
+                Sustainability, where I have the opportunity to address and
+                resolve intricate back-end challenges within the realm of web
+                development.
+              </li>
+            </ul>
+          </div>
+          <!-- Education -->
+          <div class="tab-contents" id="education">
+            <ul>
+              <li>
+                <span>Old Dominion University</span><br />Major - Information
+                Technology
+              </li>
+              <li>
+                <span>Self-Taught</span><br />
+                While completing my Degree, I have spent the past few years
+                teaching myself computer programming and Fullstack Web
+                Develpment with the help of the ever growing list of Udemy Courses and Online
+                tutorials I used to teach myself most anything I needed to
+                know to start a new career as a software engineer / Fullstack
+                Web Developer.
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-------------------Portfolio Current Projects---------------->
+  <!------------------services---------------->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">Skills</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>UI/UX Design</h2>
+          <p>
+            I'm the maestro of digital harmony, orchestrating seamless user
+            experiences that are as intuitive as they are enchanting. With a
+            keen eye for aesthetics and a deep understanding of human
+            behavior, I craft interfaces that are as easy on the eyes as they
+            are on the mind. The result? A digital symphony that leaves users
+            humming with delight.
+          </p>
+          <!-- <a href="#">Learn More</a> -->
+        </div>
 
-    <div id="portfolio">
-      <div class="container">
-        <h1 class="sub-title">Current Projects</h1>
-        <div class="work-list">
-          <div class="work">
-            <img src="images/work-1.png" alt="" />
-            <div class="layer">
-              <h3>Social Media Clone</h3>
-              <p>
-                Check in as this Next.js social media clone gets new life
-                breathed into this cosmic creation, shaping it into a stellar
-                example of a platform where users can connect, share, and
-                explore. Join us on this interstellar adventure and witness its
-                birth. Stay tuned for updates, sneak peeks, and the eventual
-                launch of our Next.js social media clone.
-              </p>
-              <a href="https://github.com/xXEpicurusXx/social-clone"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
+        <div>
+          <i class="fa-solid fa-crop"></i>
+          <h2>Web Development</h2>
+          <p>
+            I'm a jack-of-all-trades in the digital realm, seamlessly blending
+            front-end finesse with back-end brilliance. A master of HTML, CSS,
+            and JavaScript, I create visually stunning websites that are as
+            functional as they are fabulous. Plus, with my server-side
+            sorcery, I ensure that each user's experience is smooth and
+            seamless.
+          </p>
+          <!-- <a href="#">Learn More</a> -->
+        </div>
+
+        <div>
+          <i class="fa-solid fa-database"></i>
+          <h2>Database Management</h2>
+          <p>
+            I'm the digital librarian, meticulously cataloging and curating
+            vast troves of data with a keen eye for organization. With a knack
+            for SQL and a passion for efficiency, I ensure that information is
+            stored, retrieved, and updated with the precision of a Swiss
+            watch. In the world of data, I'm the master of order and
+            efficiency.
+          </p>
+          <!-- <a href="#">Learn More</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-------------------Portfolio Current Projects---------------->
+
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">Current Projects</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work-1.png" alt="" />
+          <div class="layer">
+            <h3>T.A.I.O.P</h3>
+            <p>
+              T.A.I.O.P is the perfect companion for anyone looking to explore the vibrant city of Tokyo. With its
+              comprehensive travel guide, personalized recommendations, and engaging social blogging features, the app
+              ensures that users have a memorable and enriching experience in the heart of Japan.
+            </p>
+            <a href="https://github.com/xXEpicurusXx/social-clone"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
+        </div>
 
-          <div class="work">
-            <img src="images/work-2.png" alt="" />
-            <div class="layer">
-              <h3>Music App</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-              <a href="#"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
+        <div class="work">
+          <img src="images/work-2.png" alt="" />
+          <div class="layer">
+            <h3>Music App</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
+        </div>
 
-          <div class="work">
+        <!-- <div class="work">
             <img src="images/work-3.png" alt="" />
             <div class="layer">
               <h3>Online Shopping App</h3>
@@ -215,116 +208,94 @@
                 ><i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
             </div>
-          </div>
-        </div>
+          </div> -->
       </div>
     </div>
+  </div>
 
-    <!-------------------Portfolio Past Projects---------------->
-    <div id="portfolio">
-      <div class="container">
-        <h1 class="sub-title">Past Projects</h1>
-        <div class="work-list">
-          <div class="work">
-            <img src="images/work-1.png" alt="" />
-            <div class="layer">
-              <h3>Social Media Clone</h3>
-              <p>
-                Check in as this Next.js social media clone gets new life
-                breathed into this cosmic creation, shaping it into a stellar
-                example of a platform where users can connect, share, and
-                explore. Join us on this interstellar adventure and witness its
-                birth. Stay tuned for updates, sneak peeks, and the eventual
-                launch of our Next.js social media clone.
-              </p>
-              <a href="https://github.com/xXEpicurusXx/social-clone"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-
-          <div class="work">
-            <img src="images/work-2.png" alt="" />
-            <div class="layer">
-              <h3>Music App</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-              <a href="#"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-
-          <div class="work">
-            <img src="images/work-3.png" alt="" />
-            <div class="layer">
-              <h3>Online Shopping App</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-              <a href="#"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-            <a href="/more_projects.html" class="btn">See More</a>
+  <!-------------------Portfolio Past Projects---------------->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">Past Projects</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work-1.png" alt="" />
+          <div class="layer">
+            <h3>Social Media Clone</h3>
+            <p>
+              Check in as this Next.js social media clone gets new life
+              breathed into this cosmic creation, shaping it into a stellar
+              example of a platform where users can connect, share, and
+              explore. Join us on this interstellar adventure and witness its
+              birth. Stay tuned for updates, sneak peeks, and the eventual
+              launch of our Next.js social media clone.
+            </p>
+            <a href="https://github.com/xXEpicurusXx/social-clone"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
         </div>
 
-
-    <!-------------------contact---------------->
-
-    <div id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="contact-left">
-            <h1 class="sub-title">Contact Me</h1>
-
-            <div class="social-icons">
-              <a href="https://www.linkedin.com/in/cameron-mckeel-b2a30327a/"
-                ><i class="fa-brands fa-linkedin-in"></i
-              ></a>
-              <a href="https://github.com/xXEpicurusXx"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-              <a href="https://twitter.com/xXEpicurusXx"
-                ><i class="fa-brands fa-square-x-twitter"></i
-              ></a>
-            </div>
-
-            <a href="images/LinkedIn Resume.pdf" download class="btn btn2"
-              >Download LinkedIn CV</a
-            >
-            <a href="images/Japnaese Resume.pdf" download class="btn btn2"
-              >Download Japanese CV</a
-            >
+        <div class="work">
+          <img src="images/work-2.png" alt="" />
+          <div class="layer">
+            <h3>Music App</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
+        </div>
 
-          <div class="contact-right">
-            <form name="submit-to-google-sheet">
-              <input type="text" name="Name" placeholder="Your Name" required />
-              <input
-                type="email"
-                name="email"
-                placeholder="Your Email"
-                required
-              />
-              <textarea
-                name="Message"
-                rows="6"
-                placeholder="Your Message"
-              ></textarea>
-              <button type="submit" class="btn btn2">Submit</button>
-            </form>
-            <span id="msg"></span>
+        <div class="work">
+          <img src="images/work-3.png" alt="" />
+          <div class="layer">
+            <h3>Online Shopping App</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
+          <a href="/more_projects.html" class="btn">See More</a>
         </div>
       </div>
 
-      <!-- ---------------probably dont need this---------------- -->
 
-      <div class="copyright">
-        <p>
-          Copyright <i class="fa-regular fa-copyright"></i> Cameron. Made by
-          Cameron <i class="fa-regular fa-at"></i> Epicurus Development
-        </p>
+      <!-------------------contact---------------->
+
+      <div id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+
+              <div class="social-icons">
+                <a href="https://www.linkedin.com/in/cameron-mckeel-b2a30327a/"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/xXEpicurusXx"><i class="fa-brands fa-github"></i></a>
+                <a href="https://twitter.com/xXEpicurusXx"><i class="fa-brands fa-square-x-twitter"></i></a>
+              </div>
+
+              <a href="images/LinkedIn Resume.pdf" download class="btn btn2">Download LinkedIn CV</a>
+              <a href="images/Japnaese Resume.pdf" download class="btn btn2">Download Japanese CV</a>
+            </div>
+
+            <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+              </form>
+              <span id="msg"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ---------------probably dont need this---------------- -->
+
+        <div class="copyright">
+          <p>
+            Copyright <i class="fa-regular fa-copyright"></i> Cameron. Made by
+            Cameron <i class="fa-regular fa-at"></i> Epicurus Development
+          </p>
+        </div>
       </div>
-    </div>
-  </body>
+</body>
+
 </html>
