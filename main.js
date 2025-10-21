@@ -41,3 +41,24 @@ var tablinks = document.getElementsByClassName("tab-links");
             })
             .catch(error => console.error('Error!', error.message))
         })
+
+document.addEventListener('DOMContentLoaded', () => {
+  const backToTopButton = document.getElementById('backToTop');
+
+  // Show/hide button based on scroll position
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) { // Show button after scrolling 100px
+      backToTopButton.classList.add('visible');
+    } else {
+      backToTopButton.classList.remove('visible');
+    }
+  });
+
+  // Scroll to top when button is clicked
+  backToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Smooth scrolling
+    });
+  });
+});
